@@ -1,12 +1,13 @@
 "# productapp" 
 
-Before running the application, have to create the database(local) with following details
+ 1.Before running the application, have to create the database(local) with following details
 
-DB name : ProductsDb
+     DB name : ProductsDb
+     Collections :products,users
 
-Collections :products,users
+ 2."Server" is the backend server folder and
+    "Products" is the angular folder 
 
-
-The angular application folder uploaded without node-modules 
+ 3.The angular application folder(Products) uploaded without node-modules 
 
 
