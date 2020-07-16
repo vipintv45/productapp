@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div class="class-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="btn btn-primary" (click)='toggleImage()'>
+                              {{showImage? 'Hide' : 'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Product</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        
+                        <th>5 Star Rating</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let product of products'>
+                        <td><img *ngIf ='showImage'
+                             [src]='product.imageUrl' 
+                            [title]='product.productName'
+                             [style.width.px]='imageWidth'
+                             [style.margin.px]='imageMargin'
+                             ></td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.productCode}}</td>
+                        <td>{{product.releaseDate}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.starRating}}</td>
+                        <td><button (click)="edit(product)">edit</button><button (click)="delete(product)">delete</button></td>
+                      
+                    </tr>
+ 
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<!-- Default form login -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Login</p>
+
+    <!-- Email -->
+    <input type="text" [(ngModel)]="loginUserDetails.email" id="defaultLoginFormEmail" class="form-control mb-4" name="email" placeholder="Username">
+
+    <!-- Password -->
+    <input type="password" [(ngModel)]="loginUserDetails.password" id="defaultLoginFormPassword" class="form-control mb-4" name="password" placeholder="Password">
+
+   
+
+    <!-- Sign in button -->
+    <button class="btn btn-success btn-block my-4" (click)="loginUser()" type="button">Log in</button>
+
+  
+   
+</form>
+<!-- Default form login -->
+
+
